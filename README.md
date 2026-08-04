@@ -48,7 +48,7 @@ The project covers:
 
 ## Lab Architecture
 
-![SIEM Homelab Architecture](Architecture/siem-homelab-architecture.png)
+![SIEM Homelab Architecture](Architecture/Siem_Homelab_Architecture_Final.png)
 
 ```text
 Windows 10 Endpoint
