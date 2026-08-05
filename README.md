@@ -50,24 +50,6 @@ The project covers:
 
 ![SIEM Homelab Architecture](Architecture/Siem_Homelab_Architecture_Final.png)
 
-```text
-Windows 10 Endpoint
-        ↓
-      Sysmon
-        ↓
-Windows Event Logs
-        ↓
-Splunk Universal Forwarder
-        ↓
-     TCP 9997
-        ↓
-Splunk Enterprise
-        ↓
-SPL Searches and Detections
-        ↓
-Investigation and MITRE ATT&CK Mapping
-```
-
 ---
 
 ## Technologies Used
@@ -116,17 +98,17 @@ Investigation and MITRE ATT&CK Mapping
 
 | ID | Detection | Telemetry | Severity | MITRE ATT&CK |
 |---|---|---|---|---|
-| DET-001 | System Discovery Commands | Sysmon Event ID 1 | Medium | T1033, T1082, T1016, T1087 |
-| DET-002 | Suspicious PowerShell Flags | Sysmon Event ID 1 | High | T1059.001 |
-| DET-003 | Certutil Execution | Sysmon Event ID 1 | Medium | Context-dependent |
-| DET-004 | Rundll32 Execution | Sysmon Event ID 1 | Medium | T1218.011 |
-| DET-005 | CMD Spawning PowerShell | Sysmon Event ID 1 | Medium | T1059.001 |
-| DET-006 | Execution from Temporary Directory | Sysmon Event ID 1 | Medium | Context-dependent |
-| DET-007 | Executable File Creation | Sysmon Event ID 11 | Medium | Context-dependent |
-| DET-008 | Registry Run Key Modification | Sysmon Event ID 13 | High | T1547.001 |
-| DET-009 | Scheduled Task Creation | Sysmon Event ID 1 | High | T1053.005 |
-| DET-010 | Encoded PowerShell Command | Sysmon Event ID 1 | High | T1059.001 |
-| DET-011 | Outbound Network Connection | Sysmon Event ID 3 | Informational | Context-dependent |
+| DET-001 | System Discovery Commands | Sysmon Event ID 1 | **Medium** | T1033, T1082, T1016, T1087 |
+| DET-002 | Suspicious PowerShell Flags | Sysmon Event ID 1 | **High** | T1059.001 |
+| DET-003 | Certutil Execution | Sysmon Event ID 1 | **Medium** | Context-dependent |
+| DET-004 | Rundll32 Execution | Sysmon Event ID 1 | **Medium** | T1218.011 |
+| DET-005 | CMD Spawning PowerShell | Sysmon Event ID 1 | **Medium** | T1059.001 |
+| DET-006 | Execution from Temporary Directory | Sysmon Event ID 1 | **Medium** | Context-dependent |
+| DET-007 | Executable File Creation | Sysmon Event ID 11 | **Medium** | Context-dependent |
+| DET-008 | Registry Run Key Modification | Sysmon Event ID 13 | **High** | T1547.001 |
+| DET-009 | Scheduled Task Creation | Sysmon Event ID 1 | **High** | T1053.005 |
+| DET-010 | Encoded PowerShell Command | Sysmon Event ID 1 | **High** | T1059.001 |
+| DET-011 | Outbound Network Connection | Sysmon Event ID 3 | **Informational** | Context-dependent |
 
 > Context-dependent detections identify suspicious telemetry that requires additional evidence before assigning a specific ATT&CK technique.
 
@@ -136,20 +118,26 @@ Investigation and MITRE ATT&CK Mapping
 
 ### System Discovery Commands
 
-![System Discovery Detection](Screenshots/det-001-system-discovery.png)
+<p align="center">
+<img src="Screenshots/det-001-system-discovery.png" width="900">
+</p>
 
 ### Suspicious PowerShell Flags
 
-![Suspicious PowerShell Detection](Screenshots/det-002-suspicious-powershell.png)
+<p align="center">
+<img src="Screenshots/det-002-suspicious-powershell.png" width="900">
+</p>
 
 ### Registry Run Key Persistence
 
-![Registry Run Key Detection](Screenshots/det-008-registry-run-key.png)
-
+<p align="center">
+<img src="Screenshots/det-008-registry-run-key.png" width="900">
+</p>
 ### Process-Linked Network Connection
 
-![Outbound Network Connection](Screenshots/det-011-network-connection.png)
-
+<p align="center">
+<img src="Screenshots/det-011-network-connection.png" width="900">
+</p>
 The complete evidence set is available in the [`Screenshots`](Screenshots/) directory.
 
 ---
