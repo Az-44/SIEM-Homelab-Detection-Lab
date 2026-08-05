@@ -81,11 +81,8 @@ When one of these executables is launched, the event is mapped to its correspond
 
 ## Example Detection
 
-*(Insert the screenshot from your Splunk search here.)*
-
-```md
 ![DET-001](../Screenshots/det-001-system-discovery.png)
-```
+
 
 ---
 
