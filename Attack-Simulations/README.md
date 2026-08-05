@@ -49,7 +49,7 @@ The simulations cover several common attacker behaviors observed during endpoint
 | Discovery | DET-001 |
 | PowerShell Abuse | DET-002, DET-005, DET-010 |
 | LOLBins (Living-off-the-Land Binaries) | DET-003, DET-004 |
-| Execution | DET-006, DET-007 |
+| Execution / File Operations | DET-006, DET-007 |
 | Persistence | DET-008, DET-009 |
 | Network Activity | DET-011 |
 
