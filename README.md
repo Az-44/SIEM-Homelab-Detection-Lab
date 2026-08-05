@@ -1,3 +1,5 @@
+![SIEM Homelab banner](Screenshots/Siem_Homelab_banner.png)
+
 # SIEM Homelab Detection Lab
 
 A Windows-based SIEM and detection engineering project built with Sysmon, Splunk Enterprise, and the Splunk Universal Forwarder.
