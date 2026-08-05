@@ -96,19 +96,19 @@ The project covers:
 
 ## Detection Catalog
 
-| ID | Detection | Telemetry | Severity | MITRE ATT&CK |
-|---|---|---|---|---|
-| DET-001 | System Discovery Commands | Sysmon Event ID 1 | **Medium** | T1033, T1082, T1016, T1087 |
-| DET-002 | Suspicious PowerShell Flags | Sysmon Event ID 1 | **High** | T1059.001 |
-| DET-003 | Certutil Execution | Sysmon Event ID 1 | **Medium** | Context-dependent |
-| DET-004 | Rundll32 Execution | Sysmon Event ID 1 | **Medium** | T1218.011 |
-| DET-005 | CMD Spawning PowerShell | Sysmon Event ID 1 | **Medium** | T1059.001 |
-| DET-006 | Execution from Temporary Directory | Sysmon Event ID 1 | **Medium** | Context-dependent |
-| DET-007 | Executable File Creation | Sysmon Event ID 11 | **Medium** | Context-dependent |
-| DET-008 | Registry Run Key Modification | Sysmon Event ID 13 | **High** | T1547.001 |
-| DET-009 | Scheduled Task Creation | Sysmon Event ID 1 | **High** | T1053.005 |
-| DET-010 | Encoded PowerShell Command | Sysmon Event ID 1 | **High** | T1059.001 |
-| DET-011 | Outbound Network Connection | Sysmon Event ID 3 | **Informational** | Context-dependent |
+| ID | Detection | Case Study | Telemetry | Severity | MITRE ATT&CK |
+|----|-----------|---------------|-----------|----------|--------------|
+| DET-001 | System Discovery Commands | [✅ View Case Study](Detection-Queries/DET-001-System-Discovery.md) | Sysmon Event ID 1 | Medium | T1033, T1082, T1016, T1087 |
+| DET-002 | Suspicious PowerShell Flags | [✅ View Case Study](Detection-Queries/DET-002-Suspicious-PowerShell.md) | Sysmon Event ID 1 | High | T1059.001 |
+| DET-003 | Certutil Execution | [✅ View Case Study](Detection-Queries/DET-003-Certutil.md) | Sysmon Event ID 1 | Medium | T1140, T1105 |
+| DET-004 | Rundll32 Execution | [✅ View Case Study](Detection-Queries/DET-004-Rundll32.md) | Sysmon Event ID 1 | Medium | T1218.011 |
+| DET-005 | CMD Spawning PowerShell | [✅ View Case Study](Detection-Queries/DET-005-CMD-PowerShell.md) | Sysmon Event ID 1 | Medium | T1059.001 |
+| DET-006 | Execution from Temporary Directory | [✅ View Case Study](Detection-Queries/DET-006-Temp-Execution.md) | Sysmon Event ID 1 | Medium | Context-dependent |
+| DET-007 | Executable File Creation | [✅ View Case Study](Detection-Queries/DET-007-Executable-File-Creation.md) | Sysmon Event ID 11 | Medium | Context-dependent |
+| DET-008 | Registry Run Key Modification | [✅ View Case Study](Detection-Queries/DET-008-Registry-Run-Key.md) | Sysmon Event ID 13 | High | T1547.001 |
+| DET-009 | Scheduled Task Creation | [✅ View Case Study](Detection-Queries/DET-009-Scheduled-Task.md) | Sysmon Event ID 1 | High | T1053.005 |
+| DET-010 | Encoded PowerShell Command | [✅ View Case Study](Detection-Queries/DET-010-Encoded-PowerShell.md) | Sysmon Event ID 1 | High | T1059.001 |
+| DET-011 | Outbound Network Connection | [✅ View Case Study](Detection-Queries/DET-011-Outbound-Network.md) | Sysmon Event ID 3 | Informational | Context-dependent |
 
 > Context-dependent detections identify suspicious telemetry that requires additional evidence before assigning a specific ATT&CK technique.
 
